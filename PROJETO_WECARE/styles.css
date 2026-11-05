@@ -1,0 +1,176 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 44px 0 70px 76px;
+}
+
+.link-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #989D9C;
+    cursor: pointer;
+    margin-right: 23px;
+}
+
+.button-reader {
+    background: #665AE1;
+    border-radius: 20.5px;
+    width: 130px;
+    height: 41px;
+    border: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.logo-image {
+    width: 568px;
+    height: 500px;
+    margin-left: 125px;
+    display: inline-block;
+}
+
+section {
+    display: inline-block;
+    margin-left: 86px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px;
+    color: #515151;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 71px;
+    color: #515151;
+}
+
+p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #848484;
+    width: 515px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+}
+
+.button-explore {
+    background: #ADFF00;
+    border-radius: 20.5px;
+    width: 239px;
+    height: 64px;
+    border: none;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26.02px;
+    color: #000000;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    /* Adiciona a transição para o movimento e a sombra mudarem de forma suave */
+    transition: all 0.3s ease;
+}
+
+/* Efeito de ressalte ao passar o rato */
+.button-explore:hover {
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.3));
+    /* Aumenta a sombra */
+    transform: translateY(-3px);
+    /* Dá um leve salto para cima */
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        display: none !important;
+    }
+
+    /* O main passa a ser a "moldura" com o padding lateral seguro para qualquer telemóvel */
+    main {
+        width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        box-sizing: border-box !important;
+        display: block !important;
+    }
+
+    /* A section e a imagem agora respeitam o espaço interno criado pelo main */
+    section {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+
+    /* Força a imagem a encolher e ajustar-se à largura exata da tela do telemóvel */
+    .logo-image {
+        width: 100% !important;
+        /* Desconta o total das duas margens no tamanho da imagem */
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: 0px !important;
+        /* Deixa exatamente 14px de margem à esquerda */
+        margin-right: 0px !important;
+        /* Deixa exatamente 22px de margem à direita */
+        margin-top: 149px !important;
+        margin-bottom: 24px !important;
+        display: block !important;
+        box-sizing: border-box !important;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 52px;
+        color: #515151;
+        text-align: center;
+        /* As margens que pediste: */
+        margin-top: 0px !important;
+        margin-bottom: 7px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #515151;
+        text-align: center;
+        /* As margens que pediste: */
+        margin-top: 0px !important;
+        margin-bottom: 17px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    p {
+        display: none;
+    }
+
+    .button-explore {
+        display: block !important;
+        /* Permite que o botão aceite margens de bloco */
+        margin-top: 0px !important;
+        margin-bottom: 50px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+
+}
